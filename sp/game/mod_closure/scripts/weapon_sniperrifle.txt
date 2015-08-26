@@ -1,0 +1,86 @@
+// Sniperrifle
+
+WeaponData
+{
+// Weapon data is loaded by both the Game and Client DLLs.
+"printname" "M82 (Sniper)"
+"viewmodel" "models/ctf_weapons/v_sniper.mdl"
+"playermodel" "models/ctf_weapons/w_sniper.mdl"
+"anim_prefix" "sniper"
+"bucket" "3"
+"bucket_position" "2"
+"bucket_360" "0"
+"bucket_position_360" "2"
+
+"clip_size" "1"
+"default_clip" "1"
+"primary_ammo" "SniperRound"
+"secondary_ammo" "None"
+
+"weight" "6"
+"item_flags" "0"
+
+// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16
+
+"single_shot" sounds)
+SoundData
+{
+"single_shot" "Weapon_Sniperrifle.Single"
+"reload" "Weapon_Sniperrifle.Reload"
+"deploy" "Weapon_Sniperrifle.Deploy"
+"special1" "Weapon_Sniperrifle.Zoom"
+"special2" "Weapon_Sniperrifle.LaserOn"
+"special3" "Weapon_Sniperrifle.LaserOff"
+}
+
+// Weapon Sprite data is loaded by the Client DLL.
+TextureData
+{
+"weapon"
+{
+"font" "CSSWeaponIcons"
+"character" "r"
+}
+"weapon_s"
+{
+"font" "CSSWeaponIconsSelected"
+"character" "r"
+}
+"weapon_small"
+{
+"font" "CSSWeaponIconsSmall"
+"character" "r"
+}
+"ammo"
+{
+"font" "WeaponIconsSmall"
+"character" "r"
+}
+"crosshair"
+{
+"font" "Crosshairs"
+"character" "Q"
+}
+"autoaim"
+{
+"file" "sprites/crosshairs"
+"x" "0"
+"y" "96"
+"width" "24"
+"height" "24"
+}
+"zoom"
+{
+"font" "Crosshairs"
+"character" "Q"
+}
+"zoom_autoaim"
+{
+"file" "sprites/crosshairs"
+"x" "24"
+"y" "112"
+"width" "104"
+"height" "16"
+}
+}
+} 

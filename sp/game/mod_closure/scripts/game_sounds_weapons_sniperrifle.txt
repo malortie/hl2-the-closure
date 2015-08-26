@@ -1,0 +1,63 @@
+
+// Sniperrifle
+"Weapon_Sniperrifle.Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"0.52"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/sniper/fire1.wav"
+	
+}
+
+"Weapon_Sniperrifle.Deploy"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.4"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/sniper/m82_deploy.wav"
+}
+
+"Weapon_Sniperrifle.Reload"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"1.4"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/sniper/m82_reload.wav"
+}
+
+"Weapon_Sniperrifle.Zoom"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"2.39"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/sniper/zoom.wav"
+}
+
+"Weapon_Sniperrifle.LaserOn"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"2.39"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/sniper/laser_on.wav"
+}
+
+
+"Weapon_Sniperrifle.LaserOff"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"2.39"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/sniper/laser_off.wav"
+}
