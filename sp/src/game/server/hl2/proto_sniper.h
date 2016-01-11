@@ -5,6 +5,14 @@
 // $NoKeywords: $
 //=============================================================================//
 
+#ifndef PROTO_SNIPER_H
+#define PROTO_SNIPER_H
+
+#ifdef _WIN32
+#pragma once
+#endif
+
+#if defined ( THECLOSURE_DLL )
 
 //=========================================================
 //=========================================================
@@ -245,3 +253,7 @@ private:
 
 	DECLARE_DATADESC();
 };
+
+#endif // defined ( THECLOSURE_DLL )
+
+#endif // PROTO_SNIPER_H

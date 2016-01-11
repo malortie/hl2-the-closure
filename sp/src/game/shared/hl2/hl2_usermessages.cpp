@@ -46,7 +46,7 @@ void RegisterUserMessages( void )
 	usermessages->Register( "AchievementEvent", -1 );
 	usermessages->Register( "UpdateJalopyRadar", -1 );
 
-#if defined ( MOD_CLOSURE )
+#if defined ( THECLOSURE_DLL ) ||  defined ( THECLOSURE_CLIENT_DLL ) 
 	usermessages->Register("Scope", 1);
 #endif
 

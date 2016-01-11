@@ -6165,7 +6165,7 @@ void CBasePlayer::CheatImpulseCommands( int iImpulse )
 #ifdef HL2_EPISODIC
 		// GiveNamedItem( "weapon_magnade" );
 #endif
-#if defined ( MOD_CLOSURE )
+#if defined ( THECLOSURE_DLL )
 		GiveNamedItem("weapon_sniperrifle");
 #endif
 

@@ -3223,6 +3223,22 @@ void CHL2_Player::UpdateClientData( void )
 			}
 		}
 
+#if defined ( THECLOSURE_DLL )
+		//
+		// SCell555:
+		//
+		// Fix a bug where acid damage type would cause screen flashing.
+		//
+		if (visibleDamageBits & DMG_ACID)
+		{
+			float flLastPoisonedDelta = gpGlobals->curtime - m_tbdPrev;
+			if (flLastPoisonedDelta > 0.1f)
+			{
+				visibleDamageBits &= ~DMG_ACID;
+			}
+		}
+#endif
+
 		CSingleUserRecipientFilter user( this );
 		user.MakeReliable();
 		UserMessageBegin( user, "Damage" );

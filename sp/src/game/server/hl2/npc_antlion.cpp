@@ -148,6 +148,54 @@ int ACT_ANTLION_DROWN;
 int ACT_ANTLION_LAND;
 int ACT_ANTLION_WORKER_EXPLODE;
 
+#if defined ( THECLOSURE_DLL )
+/* Test for testing acid flashing screen.
+void CC_Throw_Spit(void)
+{
+	bool allowPrecache = CBaseEntity::IsPrecacheAllowed();
+	CBaseEntity::SetAllowPrecache(true);
+
+	CBasePlayer* pPlayer = UTIL_GetLocalPlayer();
+	if (pPlayer)
+	{
+		Vector vecSrc, forward;
+		vecSrc = pPlayer->GetAbsOrigin() + (pPlayer->GetPlayerMaxs() - pPlayer->GetPlayerMins()) + Vector(0, 0, 32);
+
+		AngleVectors(pPlayer->EyeAngles(), &forward);
+
+		for (int i = 0; i < 6; i++)
+		{
+			CGrenadeSpit *pGrenade = (CGrenadeSpit*)CreateEntityByName("grenade_spit");
+			pGrenade->SetAbsOrigin(vecSrc);
+			pGrenade->SetAbsAngles(vec3_angle);
+			pGrenade->Precache();
+			DispatchSpawn(pGrenade);
+			//pGrenade->SetThrower(this);
+			//pGrenade->SetOwnerEntity(this);
+
+			if (i == 0)
+			{
+				pGrenade->SetSpitSize(SPIT_LARGE);
+				pGrenade->SetAbsVelocity(forward * 1000);
+			}
+			else
+			{
+				pGrenade->SetAbsVelocity((forward + RandomVector(-0.035f, 0.035f)) * 1000);
+				pGrenade->SetSpitSize(random->RandomInt(SPIT_SMALL, SPIT_MEDIUM));
+			}
+
+			// Tumble through the air
+			pGrenade->SetLocalAngularVelocity(
+				QAngle(random->RandomFloat(-250, -500),
+				random->RandomFloat(-250, -500),
+				random->RandomFloat(-250, -500)));
+		}
+	}
+	CBaseEntity::SetAllowPrecache(allowPrecache);
+}
+
+static ConCommand g_debug_throw_spit("g_debug_throw_spit", CC_Throw_Spit, "Throw antlion spit.", FCVAR_CHEAT);*/
+#endif
 
 //==================================================
 // CNPC_Antlion
