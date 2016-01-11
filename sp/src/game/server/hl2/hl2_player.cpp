@@ -3223,6 +3223,15 @@ void CHL2_Player::UpdateClientData( void )
 			}
 		}
 
+		if ( visibleDamageBits & DMG_ACID )
+		{
+			float flLastPoisonedDelta = gpGlobals->curtime - m_tbdPrev;
+			if ( flLastPoisonedDelta > 0.1f )
+			{
+				visibleDamageBits &= ~DMG_ACID;
+			}
+		}
+
 		CSingleUserRecipientFilter user( this );
 		user.MakeReliable();
 		UserMessageBegin( user, "Damage" );
